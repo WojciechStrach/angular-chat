@@ -1,0 +1,16 @@
+{
+    "Users": [
+        {
+            "Name": "Jan",
+            "Sunrname": "Kowalski"
+        },
+        {
+            "Name": "Rafał",
+            "Sunrname": "Rak"
+        },
+        {
+            "Name": "Zbigniew",
+            "Sunrname": "Suraj"
+        }
+    ]
+}

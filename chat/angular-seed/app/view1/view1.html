@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            Type message
+        </div>
+        <div class="col-sm-12">
+            <input ng-model="message">
+        </div>
+        <div class="col-sm-12">
+            <button ng-click="click()">Send message</button>
+        </div>
+    </div>
+</div>
+
+<br>
+-------------------------------------------------------------
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div ng-repeat="chat in json_data">
+                <p>Autor: {{chat.Author}}</p>
+                <p>Data: {{chat.Date}}</p>
+                <p>Godzina: {{chat.Time}}</p>
+                <p>Avatar: <img style="height: 100px; width: 200px" ng-src="{{chat.Avatar}}"/></p>
+                <p>Wiadomosc: {{chat.Message}}</p>
+                <p>--------------------------------------------</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--<ul>
+    <li ng-repeat="user in json_data | filter:query">
+        <span>{{user.Name}}</span>
+        <p>{{user.Surname}}</p>
+    </li>
+</ul>
+
+<p>
+    Add user:
+    <input ng-model="name">
+    <input ng-model="surname">
+    <button text="add" ng-click="click()">Add User</button>
+</p>-->
